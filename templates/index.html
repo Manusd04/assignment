@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf- 8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name = "viewport" content="width-device-width,intial-scale=1,shrink-to-fit=0"?\>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='design.css') }}">    
+        <title>Image Upload Assignment </title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="/process_image" method="post" enctype="multipart/form-data">
+      <label class="custom-file-input">
+            Browse
+        <input type="file" name="image_file" accept=".jpg, .jpeg, .png">
+          </label>
+      
+        <input type="submit" button class ="button-89" value= Upload>
+    </form>
+</body>
+</html>
